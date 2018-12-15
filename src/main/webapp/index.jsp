@@ -1,5 +1,4 @@
-<%@ page import="beans.PointsBean" %>
-<%@ page import="beans.PointRow" %>
+<%@ page import="beans.PointsBean, beans.PointRow" %>
 <%@ page import="java.util.List" %>
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <jsp:useBean id="results" class="beans.PointsBean" scope="session">

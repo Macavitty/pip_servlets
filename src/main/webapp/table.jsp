@@ -41,7 +41,7 @@
             <td><%= request.getParameter("r_input")%></td>
             <td>
                 <%
-                    if (request.getAttribute("isInputCorrect") == null) {
+                    if ((Boolean)request.getAttribute("isInputCorrect")) {
                         if ((Boolean) request.getAttribute("result")) {
                             out.println("да");
                         } else

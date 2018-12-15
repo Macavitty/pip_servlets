@@ -18,6 +18,7 @@ public class AreaCheckServlet extends HttpServlet {
             x = Double.parseDouble(request.getParameter("x_input"));
             y = Double.parseDouble(request.getParameter("y_input"));
             r = Integer.parseInt(request.getParameter("r_input"));
+            request.setAttribute("isInputCorrect", true);
             if (!checkRXY(x,y,r)){
                 throw new IllegalArgumentException();
             }
